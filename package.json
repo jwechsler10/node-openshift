@@ -1,0 +1,23 @@
+{
+  "name": "node-openshift",
+  "version": "1.0.0",
+  "description": "A test with trying to do a S2I build on openshift",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwechsler10/node-openshift.git"
+  },
+  "author": "Jared Wechsler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jwechsler10/node-openshift/issues"
+  },
+  "homepage": "https://github.com/jwechsler10/node-openshift#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
