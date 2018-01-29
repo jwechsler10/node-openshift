@@ -34,7 +34,7 @@ var fluffy = new Kitten({ name: 'fluffy' });
 
 fluffy.save(function (err, fluffy) {
     if (err) return console.error(err);
-    fluffy.speak();
+    //fluffy.speak();
   });
 
 Kitten.find(function (err, kittens) {
