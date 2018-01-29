@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://172.30.197.176/test');
+mongoose.connect('mongodb://172.30.5.92/test');
 
 
 var db = mongoose.connection;
