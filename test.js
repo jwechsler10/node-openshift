@@ -29,10 +29,8 @@ kittySchema.methods.speak = function () {
 }
 
 
-var Kitten = mongoose.model('Kitten', kittySchema);
-
 var fluffy = new Kitten({ name: 'fluffy' });
-fluffy.speak(); // "Meow name is fluffy"
+//fluffy.speak(); // "Meow name is fluffy"
 
 fluffy.save(function (err, fluffy) {
     if (err) return console.error(err);
@@ -44,5 +42,7 @@ Kitten.find(function (err, kittens) {
   console.log(kittens);
 })
 
-export db;
+module.exports = {
+ db
+};
 

@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/jwechsler10/node-openshift#readme",
   "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
     "express": "^4.16.2",
     "mongodb": "^3.0.1",
     "mongoose": "^5.0.2"
