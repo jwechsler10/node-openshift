@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/jwechsler10/node-openshift#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "mongodb": "^3.0.1"
   }
 }
