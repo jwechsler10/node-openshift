@@ -6,17 +6,6 @@ var kittySchema = mongoose.Schema({
 
 var Kitten = mongoose.model('Kitten', kittySchema);
 
-const findKittenByName = (name) => { 
- Kitten.find(name, (err, kitten) => {
-    if (err) {
-      return err;
-  }
-   return kitten;
-});
-};
-
-
 module.exports = {
-  //Kitten,
-  findKittenByName
+  Kitten
 };

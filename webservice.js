@@ -1,20 +1,18 @@
-var kitten = require('./schemas/kitten.js');
+var Kitten = require('./schemas/kitten.js');
 
-const findByName = kitten.findKittenByName;
-
-
-
-const getByName = (req,res) => {
-  var name = req.params.name;
-  var result = findByName(name);
-  res.status(200);
-  return res.json(result); 
-
-
+const findByName = (req, res) => {
+  var name = req.params.name
+  Kitten.find( (err, kitten) => {
+    if (err) {
+     res.status(400);
+     return res.json(err);
+  }
+  return res.json(kitten);
+});
 
 }
 
 module.exports = {
-  getByName
+ findByName
+};
 
-}
