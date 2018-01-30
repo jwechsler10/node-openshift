@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/kitty/:name', getByName);
 app.post('/kitty', postCat);
-app.get('*', (req, res) => res.redirect('/'));
+app.get('/', (req, res) =>  res.sendFile(path.join(__dirname + '/index.html')));
 
 app.listen(8080, '0.0.0.0');
 console.log("Server running on port 8080");
