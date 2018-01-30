@@ -11,10 +11,9 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => res.send('Hello World!'));
-app.get('/test', (req, res) => res.send('Test'));
 app.get('/kitty/:name', getByName);
 app.post('/kitty', postCat);
+app.get('*', (req, res) => res.redirect('/'));
 
 app.listen(8080, '0.0.0.0');
 console.log("Server running on port 8080");
