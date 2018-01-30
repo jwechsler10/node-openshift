@@ -1,6 +1,8 @@
-var tools =  require("./test.js");
+var tools =  require("./connectToDB.js");
+var api = require("./webservice.js");
+
 const conn = tools.db;
-const findByName = tools.findByName;
+const findByName = api.getByName;
 
 const express = require('express');
 const app = express();
