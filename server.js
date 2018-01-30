@@ -5,6 +5,7 @@ const express = require('express');
 const path = require('path');
 
 const conn = tools.db;
+const getAll = api.getAllKittens;
 const getByName = api.findKittenByName;
 const postCat = api.createKitten;
 const putCat = api.updateKitten;
@@ -13,6 +14,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.get('/kitty/all', getAll);
 app.get('/kitty/:name?', getByName);
 app.post('/kitty', postCat);
 app.put('/kitty/:_id?', putCat);
