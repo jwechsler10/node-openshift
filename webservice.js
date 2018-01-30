@@ -1,4 +1,6 @@
-var Kitten = require('./schemas/kitten.js');
+var schema = require('./schemas/kitten.js');
+
+var Kitten = schema.Kitten;
 
 const findByName = (req, res) => {
   var name = req.params.name
