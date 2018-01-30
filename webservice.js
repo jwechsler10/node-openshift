@@ -30,6 +30,7 @@ const createKitten = (req, res) => {
 }
 
 module.exports = {
- findByName
+ findByName,
+ createKitten
 };
 
