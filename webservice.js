@@ -16,8 +16,8 @@ const findByName = (req, res) => {
 
 const createKitten = (req, res) => {
   var name = req.body.name;
-  //var cat = new Kitten({ name: name});
-  Kitten.save({name: name}, (err, kitten) => {
+  var cat = new Kitten({ name: name});
+  cat.save({name: name}, (err, kitten) => {
     if (err) {
       res.status(400);
       return res.json(err);
