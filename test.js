@@ -37,12 +37,25 @@ fluffy.save(function (err, fluffy) {
     //fluffy.speak();
   });
 
+const findByName = (req, res) => {  
+var name = req.params.name 
+Kitten.find( (err, kitten) => {
+if (err) {
+ res.status(400);
+ return res.json(err);
+}
+return res.json(kitten);
+});
+
+}
+
 Kitten.find(function (err, kittens) {
   if (err) return console.error(err);
   console.log(kittens);
 })
 
 module.exports = {
- db
+ db,
+ findByName
 };
 
