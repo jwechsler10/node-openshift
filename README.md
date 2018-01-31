@@ -14,9 +14,9 @@
 11. Next, create the MongoDB pod by clicking Add to Project and selecting the Browse Catalog option.
 12. Enter MongoDB into the search bar and choose the appropriate option under Data Stores.
 
-     If using the ephemeral storage option, set any additional options if desired and click create.
-     If using the persistent storage option, a persistent volume with the requested amount of free space will need to be available.
-     A persistent volume claim will be created automatically.
+     * If using the ephemeral storage option, set any additional options if desired and click create.
+     * If using the persistent storage option, a persistent volume with the requested amount of free space will need to be available.
+     * A persistent volume claim will be created automatically.
      
 13. MongoDB will now build and launch. Make a note the specified connection string, as this will needed to connect the Node server to MongoDB.
 14. Open connectToDB.js and replace ('mongodb://jared:r3dh4t1!@mongodb-test/test') with the specified connection string.
