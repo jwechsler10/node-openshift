@@ -34,7 +34,7 @@ const createKitten = (req, res) => {
 
   }
     res.status(201);
-    return res.redirct('/');
+    return res.redirect('/');
   });
 
 }
