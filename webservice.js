@@ -34,7 +34,6 @@ const createKitten = (req, res) => {
 
   }
     res.status(201);
-    res.redirect('/index.html');
     return res.json(kitten._id);
   });
 
