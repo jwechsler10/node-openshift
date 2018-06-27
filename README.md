@@ -19,7 +19,7 @@
      * A persistent volume claim will be created automatically.
      
 13. MongoDB will now build and launch. Make a note the specified connection string, as this will needed to connect the Node server to MongoDB.
-14. Open connectToDB.js and replace ('mongodb://jared:r3dh4t1!@mongodb-test/test') with the specified connection string.
+14. Open connectToDB.js and replace ('mongodb://jared:kaldkldfa!@mongodb-test/test') with the specified connection string.
 15. Commit these changes to git, watch as a new build for your Node pod(s) will begin. 
 16. Once the pod(s) are active, check the logs for them, it should say connection successful.
 17. Your node pods and MongoDB pods are now talking to each other.
